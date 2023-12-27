@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Aquatic</title>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <p class="text-5xl titlefont textcolorbase typewriter">SUCULENT</p>
+    </div>
+
+    <!-- BackGround animations -->
+    <div id="followDiv"></div>
+    <div class="absolute">
+        <div class="absolute inset-0 justify-center">
+            <div class="bg-shape bg-shape1 bg-[#a3b18a] opacity-10 bg-blur"></div>
+            <div class="bg-shape bg-shape2 bg-[#a3b18a] opacity-10 bg-blur"></div>
+            <div class="bg-shape bg-shape3 bg-[#a3b18a] opacity-10 bg-blur"></div>
+        </div>
+    </div>
+
+    <div class="h-screen flex items-center justify-center">
+
+        <div class="h-[95vh] w-[97vw] rounded-[40px] border border-[#a3b18a] border-[4px] overflow-auto">
+
+
+            <!-- Responsive Navigation Menu -->
+            <div>
+                <div class="h-[7vh] w-full">
+
+                    <div class="flex flex-col items-center md:flex-row md:items-center justify-between p-4 md:p-10 text-white">
+                        <span class="font-bold text-2xl md:text-4xl titlefont textcolorbase mb-2 md:mb-0" ><a href="index.html">Plantique</a></span>
+                        <div class="hidden md:flex">
+                            <a href="catalogue.html" class="textcolorbase mr-4 titlefont text-xl underline-text text-[#a3b18a] hover:text-[#dad7cd] transform transition-all duration-300 ">Catalogue</a>
+                            <a href="contactus.html" class="textcolorbase titlefont text-xl underline-text text-[#a3b18a] hover:text-[#dad7cd] transform transition-all duration-300">Contact us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <div class="md:hidden">
+                <div class="flex flex-col items-center">
+                    <a href="catalogue.html" class="textcolorbase mb-2 titlefont text-xl underline-text text-[#a3b18a] hover:text-[#dad7cd] transform transition-all duration-300 ">Catalogue</a>
+                    <a href="contactus.html" class="textcolorbase titlefont text-xl underline-text text-[#a3b18a] hover:text-[#dad7cd] transform transition-all duration-300">Contact us</a>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="flex items-center justify-center mt-8 mx-10">
+                <div class="w-full p-4">
+                    <div class="flex items-center justify-center space-x-4"> 
+
+                        <a href="catalogue.html">      
+                            <button class=" bg-[#546F50] hover:bg-[#dad7cd]  font-bold py-2 px-16 rounded-[100px]  transform transition-all duration-300 scale-100 hover:scale-105 titlefont textcolorbase hover:text-[#546F50]  ">
+                                <p class="">TROPICAL</p>
+                                </button>
+                        </a>         
+
+                        <a href="catalogue2.html">      
+                             <button class=" bg-[#546F50] hover:bg-[#dad7cd]  font-bold py-2 px-16 rounded-[100px]  transform transition-all duration-300 scale-100 hover:scale-105 titlefont textcolorbase hover:text-[#546F50]  ">
+                                <p class="">SUCULENT </p>
+                            </button>
+                        </a>                    
+                    </div>
+                </div>
+            </div>
+            
+        
+            
+
+            <div class="flex-center">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4 sm:px-4 lg:px-32 sm:mt-8 lg:mt-4 w-full mx-auto">
+                    <!-- Square 1 -->
+                    <a href="plants/suculentaloe.html" class="square-item relative overflow-hidden rounded-[50px] w-full h-[300px] " onmousemove="lookAtMouse(event, this)">
+                        <img src="images2/1Aloe.jpg" alt="Aloe Vera">
+                        <div class="overlay transition-all duration-300"></div>
+                        <p class="text-center sm:mt-10 lg:mt-16 text-xl text-white z-[2]">Aloe Vera</p>
+                    </a>
+            
+                    <!-- Square 2 -->
+                    <a href="plants/suculentecheveria.html" class="square-item relative overflow-hidden rounded-[50px] w-full h-[300px]" onmousemove="lookAtMouse(event, this)">
+                        <img src="images2/2Echeveria.jpg" alt="Echeveria">
+                        <div class="overlay transition-all duration-300"></div>
+                        <p class="text-center sm:mt-10 lg:mt-16 text-xl text-white z-[2]">Echeveria</p>
+                    </a>
+            
+                    <!-- Square 3 -->
+                    <a href="plants/suculentsedum.html" class="square-item relative overflow-hidden rounded-[50px] w-full h-[300px]" onmousemove="lookAtMouse(event, this)">
+                        <img src="images2/3Jade.jpg" alt="Sedum">
+                        <div class="overlay transition-all duration-300"></div>
+                        <p class="text-center sm:mt-10 lg:mt-16 text-xl text-white z-[2]">Sedum</p>
+                    </a>
+            
+            
+                   <!-- Square 4 -->
+                    <a href="plants/suculentjade.html" class="square-item relative overflow-hidden rounded-[50px] w-full h-[300px]" onmousemove="lookAtMouse(event, this)">
+                        <img src="images2/4Sedum.jpg" alt="Jade Plant">
+                        <div class="overlay transition-all duration-300"></div>
+                        <p class="text-center sm:mt-10 lg:mt-16 text-xl text-white z-[2]">Jade Plant</p>
+                    </a>
+
+                    <!-- Square 5 -->
+                    <a href="plants/suculenthaworthia.html" class="square-item relative overflow-hidden rounded-[50px] w-full h-[300px]" onmousemove="lookAtMouse(event, this)">
+                        <img src="images2/5Haworthia.jpg" alt="Haworthia">
+                        <div class="overlay transition-all duration-300"></div>
+                        <p class="text-center sm:mt-10 lg:mt-16 text-xl text-white z-[2]">Haworthia</p>
+                    </a>
+
+                    <!-- Square 6 -->
+                    <a href="plants/suculentsempervivum.html" class="square-item relative overflow-hidden rounded-[50px] w-full h-[300px]" onmousemove="lookAtMouse(event, this)">
+                        <img src="images2/6Sempervivum.jpg" alt="Sempervivum ">
+                        <div class="overlay transition-all duration-300"></div>
+                        <p class="text-center sm:mt-10 lg:mt-16 text-xl text-white z-[2]">Sempervivum </p>
+                    </a>
+
+                    <!-- Square 7 -->
+                    <a href="plants/suculentagave.html" class="square-item relative overflow-hidden rounded-[50px] w-full h-[300px]" onmousemove="lookAtMouse(event, this)">
+                        <img src="images2/7Agave.jpg" alt="Agave">
+                        <div class="overlay transition-all duration-300"></div>
+                        <p class="text-center sm:mt-10 lg:mt-16 text-xl text-white z-[2]">Agave</p>
+                    </a>
+
+                    <!-- Square 8 -->
+                    <a href="plants/suculentkalanchoe.html" class="square-item relative overflow-hidden rounded-[50px] w-full h-[300px]" onmousemove="lookAtMouse(event, this)">
+                        <img src="images2/8Kalanchoe.jpg" alt="Kalanchoe">
+                        <div class="overlay transition-all duration-300"></div>
+                        <p class="text-center sm:mt-10 lg:mt-16 text-xl text-white z-[2]">Kalanchoe</p>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

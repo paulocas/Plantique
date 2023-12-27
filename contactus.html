@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <p class="text-5xl titlefont textcolorbase typewriter">CONTACT US</p>
+      </div>
+
+
+    <!-- BackGround animations -->
+    <div id="followDiv"></div>
+    <div class="absolute">
+        <div class="absolute inset-0 justify-center">
+            <div class="bg-shape bg-shape1 bg-[#a3b18a] opacity-10 bg-blur"></div>
+            <div class="bg-shape bg-shape2 bg-[#a3b18a] opacity-10 bg-blur"></div>
+            <div class="bg-shape bg-shape3 bg-[#a3b18a] opacity-10 bg-blur"></div>
+        </div>
+    </div>
+
+    
+    <div class=" h-screen  flex items-center  justify-center">
+
+    <div class="h-[95vh] w-[97vw]  rounded-[40px] border border-[#a3b18a] border-[4px]">
+
+    <!-- Responsive Navigation Menu -->
+    <div>
+        <div class="h-[7vh] w-full">
+
+            <div class="flex flex-col items-center md:flex-row md:items-center justify-between p-4 md:p-10 text-white">
+                <span class="font-bold text-2xl md:text-4xl titlefont textcolorbase mb-2 md:mb-0" ><a href="index.html">Plantique</a></span>
+                <div class="hidden md:flex">
+                    <a href="catalogue.html" class="textcolorbase mr-4 titlefont text-xl underline-text text-[#a3b18a] hover:text-[#dad7cd] transform transition-all duration-300 ">Catalogue</a>
+                    <a href="contactus.html" class="textcolorbase titlefont text-xl underline-text text-[#a3b18a] hover:text-[#dad7cd] transform transition-all duration-300">Contact us</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <!-- Contact Me Section -->
+    <div class="flex items-center justify-center h-[75%]">
+        <div class="w-full max-w-md">
+            <p class="text-3xl titlefont textcolorbase mb-4">Contact us</p>
+
+            <!-- Contact Form -->
+            <form>
+                <!-- Email Input -->
+                <div class="mb-4">
+                    <label class="block text-sm textcolorbase" for="email">Your Email:</label>
+                    <input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="example@example.com">
+                </div>
+
+                <!-- Message Input -->
+                <div class="mb-6">
+                    <label class="block text-sm textcolorbase" for="message">Your Message:</label>
+                    <textarea class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="Type your message here"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="bg-[#546F50] hover:bg-[#dad7cd]  font-bold py-2 px-16 rounded-[100px]  transform transition-all duration-300 scale-100 hover:scale-105 titlefont textcolorbase hover:text-[#546F50]" type="submit">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+           
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+              
